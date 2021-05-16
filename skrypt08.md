@@ -108,5 +108,19 @@ Czwarty parametr: [zadanie02.sh]
 
 Widzimy, że do skryptu zosały przekazane jako parametry konkretne nazwy plików (pasujące do wzorca)
 
+### Znak wieloznaczny niepasujący do żadnego pliku (np. `jpg`)
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh *.jpg
+Liczba parametrów: [1]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [*.jpg]
+Drugi parametr: []
+Trzeci parametr: []
+Czwarty parametr: []
+```
+
+Symbol wieloznaczny niepasujący do żadnego pliku zostanie przekazany dosłownie.
+
 
 
