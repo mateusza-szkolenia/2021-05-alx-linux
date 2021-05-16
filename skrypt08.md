@@ -122,5 +122,56 @@ Czwarty parametr: []
 
 Symbol wieloznaczny niepasujący do żadnego pliku zostanie przekazany dosłownie.
 
+## Symbole generujące
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh raport-{wiosna,lato,jesien,zima}.txt
+Liczba parametrów: [4]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [raport-wiosna.txt]
+Drugi parametr: [raport-lato.txt]
+Trzeci parametr: [raport-jesien.txt]
+Czwarty parametr: [raport-zima.txt]
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ echo raport-{wiosna,lato,jesien,zima}.txt
+raport-wiosna.txt raport-lato.txt raport-jesien.txt raport-zima.txt
+```
+
+### Zakresy liczbowe
+
+```
+[kurs@centos55 2021-05-alx-linux]$ echo raport-{2000..2012}.txt
+raport-2000.txt raport-2001.txt raport-2002.txt raport-2003.txt
+raport-2004.txt raport-2005.txt raport-2006.txt raport-2007.txt
+raport-2008.txt raport-2009.txt raport-2010.txt raport-2011.txt
+raport-2012.txt
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ echo raport-{1..15}.txt
+raport-1.txt raport-2.txt raport-3.txt raport-4.txt
+raport-5.txt raport-6.txt raport-7.txt raport-8.txt
+raport-9.txt raport-10.txt raport-11.txt raport-12.txt
+raport-13.txt raport-14.txt raport-15.txt
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ echo raport-{01..15}.txt
+raport-01.txt raport-02.txt raport-03.txt raport-04.txt
+raport-05.txt raport-06.txt raport-07.txt raport-08.txt
+raport-09.txt raport-10.txt raport-11.txt raport-12.txt
+raport-13.txt raport-14.txt raport-15.txt
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ echo raport-{0001..0015}.txt
+raport-0001.txt raport-0002.txt raport-0003.txt raport-0004.txt
+raport-0005.txt raport-0006.txt raport-0007.txt raport-0008.txt
+raport-0009.txt raport-0010.txt raport-0011.txt raport-0012.txt
+raport-0013.txt raport-0014.txt raport-0015.txt
+```
+
 
 
