@@ -2,13 +2,13 @@
 
 echo "Początek skryptu"
 
-slowo="baah"
+read -p "Podaj slowo: " slowo
 
 if grep -q "$slowo" /etc/passwd; then
     echo "Znaleziono słowo $slowo w pliku /etc/passwd"
     echo "hurra!"
-    date
-    echo "koniec"
+else
+    echo "Chyba jednak nie ma tego słowa..."
 fi
 
 echo "Koniec skryptu"
