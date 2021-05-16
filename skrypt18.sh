@@ -11,13 +11,13 @@ grep -q "$szuk" "$plik" 2> /dev/null
 
 wynik="$?"
 
-if [ "$wynik" = 0 ]
+if [ "$wynik" -eq 0 ]
 then
     echo "Znaleziono słowo: $szuk w pliku $plik"
-elif [ "$wynik" = 1 ]
+elif [ "$wynik" -eq 1 ]
 then
     echo "Nie znaleziono słowa: $szuk w plik $plik"
-elif [ "$wynik" = 2 ]
+elif [ "$wynik" -eq 2 ]
 then
     echo "Nie znaleziono lub brak praw do pliku: $plik"
 else
