@@ -2,6 +2,7 @@
 
 format=%F
 data=$(date +$format)
+nazwapliku=backup-doc-$data.tar.gz
 
-tar zcf backup-doc-$data.tar.gz /usr/share/doc
+tar zcf $nazwapliku /usr/share/doc
 
