@@ -17,3 +17,5 @@ else
     echo "Jesteś niepełnoletni"
 fi
 
+[ "$wiek" -ge 18 ] && echo "Pełnoletni" || echo "Niepełnoletni"
+
