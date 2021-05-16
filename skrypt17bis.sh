@@ -2,7 +2,7 @@
 
 read -p "Podaj liczbe: " n
 
-if test "$n" -gt 10
+if [ "$n" -gt 10 ]
 then
     echo "O jak dużo"
 else
