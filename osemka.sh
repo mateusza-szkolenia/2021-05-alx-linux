@@ -1,0 +1,1 @@
+skrypt08.sh
