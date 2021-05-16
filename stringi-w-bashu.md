@@ -54,3 +54,24 @@ zima-2013.txt
 zima-2013
 ```
 
+# Tablice
+
+```
+[kurs@centos55 2021-05-alx-linux]$ imiona=(Mateusz Marcin Michał Marek)
+
+[kurs@centos55 2021-05-alx-linux]$ echo $imiona
+Mateusz
+
+[kurs@centos55 2021-05-alx-linux]$ echo "${imiona[0]}"
+Mateusz
+
+[kurs@centos55 2021-05-alx-linux]$ echo "${imiona[1]}"
+Marcin
+
+[kurs@centos55 2021-05-alx-linux]$ echo "${imiona[2]}"
+Michał
+
+[kurs@centos55 2021-05-alx-linux]$ echo "${imiona[3]}"
+Marek
+```
+
