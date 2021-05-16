@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# autor: Mateusz Adamowski
+# skrypt stworzony na szkoleniu w ALX
+
+echo "Dzien dobry, mamy dzis $(date +%F)"
+
+# echo "Zalogowani użytkownicy:"
+
+# wyświetla listę zalogowanych użytkowników
+who
+
+echo "Koniec"

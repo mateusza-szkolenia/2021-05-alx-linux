@@ -1,0 +1,11 @@
+#!/bin/bash
+
+imie=Mateusz
+firma=ALX
+dzisiaj=$(date +%F)
+
+echo "Nazywam się $imie i pracuję w $firma"
+echo 'Nazywam się $imie i pracuję w $firma'
+
+echo "Dzisiaj jest $dzisiaj"
+
