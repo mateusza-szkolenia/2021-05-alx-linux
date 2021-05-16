@@ -1,6 +1,6 @@
 #!/bin/bash
 
-biez=2021
+biez=$(date +%Y)
 
 read -p "Podaj rok urodzenia: " ur
 
