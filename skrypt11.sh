@@ -4,8 +4,7 @@ echo "Początek skryptu"
 
 slowo="baah"
 
-if grep -q "$slowo" /etc/passwd
-then
+if grep -q "$slowo" /etc/passwd; then
     echo "Znaleziono słowo $slowo w pliku /etc/passwd"
     echo "hurra!"
     date
@@ -13,3 +12,5 @@ then
 fi
 
 echo "Koniec skryptu"
+
+
