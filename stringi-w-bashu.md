@@ -55,7 +55,7 @@ zima-2013.txt
 zima-2013
 ```
 
-# Tablice
+# Tablice (*Array*)
 
 ```
 [kurs@centos55 2021-05-alx-linux]$ imiona=(Mateusz Marcin Michał Marek)
