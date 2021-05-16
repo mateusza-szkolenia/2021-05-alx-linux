@@ -10,3 +10,10 @@ echo "Rok urodzenia: $ur"
 echo "Wiek: $((biez - ur))"
 echo "Wiek: $wiek"
 
+if [ "$wiek" -ge 18 ]
+then
+    echo "Jesteś pełnoletni"
+else
+    echo "Jesteś niepełnoletni"
+fi
+
