@@ -1,0 +1,1 @@
+The Unicode code point for "€" is U+20AC
