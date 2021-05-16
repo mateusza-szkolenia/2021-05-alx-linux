@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Podaj nazwę konta:"
+echo -n "Podaj nazwę konta: "
 
 read konto
 
