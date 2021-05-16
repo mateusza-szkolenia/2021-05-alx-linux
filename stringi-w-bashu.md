@@ -23,6 +23,7 @@ Mateu
 
 ## usuwanie prefixów i suffixów
 
+```
 [kurs@centos55 2021-05-alx-linux]$ nazwapliku='raport-zima-2013.txt'
 
 [kurs@centos55 2021-05-alx-linux]$ echo "${nazwapliku}"
