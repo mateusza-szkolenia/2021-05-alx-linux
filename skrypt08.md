@@ -226,3 +226,46 @@ Drugi parametr: []
 Trzeci parametr: []
 Czwarty parametr: []
 ```
+
+## Przekazywanie wartości z innych zmiennych
+
+```
+[kurs@centos55 2021-05-alx-linux]$ read zdanie
+ala ma kota
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ echo "Zdanie: [$zdanie]"
+Zdanie: [ala ma kota]
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh $zdanie 
+Liczba parametrów: [3]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [ala]
+Drugi parametr: [ma]
+Trzeci parametr: [kota]
+Czwarty parametr: []
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh "$zdanie"
+Liczba parametrów: [1]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [ala ma kota]
+Drugi parametr: []
+Trzeci parametr: []
+Czwarty parametr: []
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh '$zdanie'
+Liczba parametrów: [1]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [$zdanie]
+Drugi parametr: []
+Trzeci parametr: []
+Czwarty parametr: []
+```
+
