@@ -173,5 +173,23 @@ raport-0009.txt raport-0010.txt raport-0011.txt raport-0012.txt
 raport-0013.txt raport-0014.txt raport-0015.txt
 ```
 
+### iloczyn kartezjański zbiorów
 
+```
+[kurs@centos55 2021-05-alx-linux]$ echo raport-{2018..2020}-{wiosna,lato,jesien,zima}-cz{1..5}.txt
+raport-2018-wiosna-cz1.txt raport-2018-wiosna-cz2.txt raport-2018-wiosna-cz3.txt raport-2018-wiosna-cz4.txt raport-2018-wiosna-cz5.txt
+raport-2018-lato-cz1.txt raport-2018-lato-cz2.txt raport-2018-lato-cz3.txt raport-2018-lato-cz4.txt raport-2018-lato-cz5.txt
+raport-2018-jesien-cz1.txt raport-2018-jesien-cz2.txt raport-2018-jesien-cz3.txt raport-2018-jesien-cz4.txt raport-2018-jesien-cz5.txt
+raport-2018-zima-cz1.txt raport-2018-zima-cz2.txt raport-2018-zima-cz3.txt raport-2018-zima-cz4.txt raport-2018-zima-cz5.txt
+raport-2019-wiosna-cz1.txt raport-2019-wiosna-cz2.txt raport-2019-wiosna-cz3.txt raport-2019-wiosna-cz4.txt raport-2019-wiosna-cz5.txt
+raport-2019-lato-cz1.txt raport-2019-lato-cz2.txt raport-2019-lato-cz3.txt raport-2019-lato-cz4.txt raport-2019-lato-cz5.txt
+raport-2019-jesien-cz1.txt raport-2019-jesien-cz2.txt raport-2019-jesien-cz3.txt raport-2019-jesien-cz4.txt raport-2019-jesien-cz5.txt
+raport-2019-zima-cz1.txt raport-2019-zima-cz2.txt raport-2019-zima-cz3.txt raport-2019-zima-cz4.txt raport-2019-zima-cz5.txt
+raport-2020-wiosna-cz1.txt raport-2020-wiosna-cz2.txt raport-2020-wiosna-cz3.txt raport-2020-wiosna-cz4.txt raport-2020-wiosna-cz5.txt
+raport-2020-lato-cz1.txt raport-2020-lato-cz2.txt raport-2020-lato-cz3.txt raport-2020-lato-cz4.txt raport-2020-lato-cz5.txt
+raport-2020-jesien-cz1.txt raport-2020-jesien-cz2.txt raport-2020-jesien-cz3.txt raport-2020-jesien-cz4.txt raport-2020-jesien-cz5.txt
+raport-2020-zima-cz1.txt raport-2020-zima-cz2.txt raport-2020-zima-cz3.txt raport-2020-zima-cz4.txt raport-2020-zima-cz5.txt
+```
+
+Łącznie jest `3 lata * 4 pory roku * 5 części = 60 elementów`
 
