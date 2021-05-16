@@ -193,3 +193,36 @@ raport-2020-zima-cz1.txt raport-2020-zima-cz2.txt raport-2020-zima-cz3.txt rapor
 
 Łącznie jest `3 lata * 4 pory roku * 5 części = 60 elementów`
 
+## Katalogi domowe
+
+### własny
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh ~
+Liczba parametrów: [1]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [/home/kurs]
+Drugi parametr: []
+Trzeci parametr: []
+Czwarty parametr: []
+```
+
+### innego użytkownika
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh ~apache/
+Liczba parametrów: [1]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [/usr/share/httpd/]
+Drugi parametr: []
+Trzeci parametr: []
+Czwarty parametr: []
+```
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh ~root
+Liczba parametrów: [1]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [/root]
+Drugi parametr: []
+Trzeci parametr: []
+Czwarty parametr: []
+```
