@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo -n "Podaj nazwę konta: "
-
-read konto
+read -p 'Podaj nazwę konta: ' konto
 
 id $konto
 
