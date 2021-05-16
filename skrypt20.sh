@@ -1,15 +1,15 @@
 #!/bin/bash
 
-read -p "Podaj liczbę z przedziału 10..20 (włącznie):" n
+read -p "Podaj liczbę spoza przedziału 10..20 (włącznie):" n
 
-# operator &&
-# logiczne ORAZ (AND)
+# operator ||
+# logiczne LUB (OR)
 
 
-if [ "$n" -ge 10 ] && [ "$n" -le 20 ]
+if [ "$n" -lt 10 ] || [ "$n" -gt 20 ]
 then
     echo "Liczba $n jest OK"
 else
-    echo "Liczba spoza zakresu"
+    echo "Liczba $n jest nie ok"
 fi
     
