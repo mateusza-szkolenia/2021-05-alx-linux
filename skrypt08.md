@@ -80,3 +80,33 @@ Trzeci parametr: []
 Czwarty parametr: []
 ```
 
+## Podstawianie nazw plików
+
+### Znak wieloznaczny w zwykłym `ls -l`
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ls -l zadanie0*
+-rw-rw-r--. 1 kurs kurs 107 05-16 10:53 zadanie01.md
+-rwxrwxr-x. 1 kurs kurs  91 05-16 10:21 zadanie01.sh
+-rw-rw-r--. 1 kurs kurs 155 05-16 10:42 zadanie02.md
+-rwxrwxr-x. 1 kurs kurs 134 05-16 11:20 zadanie02.sh
+-rw-rw-r--. 1 kurs kurs 126 05-16 11:31 zadanie03.md
+-rwxrwxr-x. 1 kurs kurs  62 05-16 11:40 zadanie03.sh
+```
+
+### Znak wieloznaczny w naszym skrypcie
+
+```
+[kurs@centos55 2021-05-alx-linux]$ ./skrypt08.sh zadanie0*
+Liczba parametrów: [6]
+Zerowy parametr: [./skrypt08.sh] nazwa programu/skryptu
+Pierwszy parametr: [zadanie01.md]
+Drugi parametr: [zadanie01.sh]
+Trzeci parametr: [zadanie02.md]
+Czwarty parametr: [zadanie02.sh]
+```
+
+Widzimy, że do skryptu zosały przekazane jako parametry konkretne nazwy plików (pasujące do wzorca)
+
+
+
