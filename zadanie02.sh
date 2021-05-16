@@ -1,6 +1,7 @@
 #!/bin/bash
 
-data=$(date +%F)
+format=%F
+data=$(date +$format)
 
 tar zcf backup-doc-$data.tar.gz /usr/share/doc
 
