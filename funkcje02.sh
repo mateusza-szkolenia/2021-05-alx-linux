@@ -1,6 +1,9 @@
 #!/bin/bash
 
 function opisz_plik(){
+    local rozmiar
+    local suma_md5 suma_sha1
+
     echo "Plik: $plik"
     rozmiar=$(wc -c < "$plik")
     suma_md5=$(md5sum < "$plik" | grep -o '^........')
@@ -13,10 +16,13 @@ function opisz_plik(){
     echo "SHA1:    ${suma_sha1:0:40}"
 }
 
+rozmiar=10000
+
 plik="/etc/passwd"
 opisz_plik
 
-
 plik="/etc/motd"
 opisz_plik
+
+echo "!!!! rozmiar: $rozmiar"
 
