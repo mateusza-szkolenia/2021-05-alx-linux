@@ -2,10 +2,7 @@
 
 for liczba in 10 20 30 20 100 50 13 29
 do
-    if [ "$liczba" -gt 25 ]
-    then
-        continue
-    fi
+    [ "$liczba" -gt 25 ] && continue
 
     echo "Liczba: $liczba"
 done
