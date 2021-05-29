@@ -2,5 +2,6 @@
 
 source "konfiguracja.sh"
 
-echo "Witaj w programie $Program"
+powitanie
+
 echo "Firma to: $firma"
