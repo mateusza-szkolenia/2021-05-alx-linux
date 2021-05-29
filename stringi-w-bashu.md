@@ -74,5 +74,8 @@ Michał
 
 [kurs@centos55 2021-05-alx-linux]$ echo "${imiona[3]}"
 Marek
+
+[kurs@centos55 2021-05-alx-linux]$ echo "${#imiona}"
+4
 ```
 

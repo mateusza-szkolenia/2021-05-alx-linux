@@ -19,7 +19,7 @@ then
     echo "Nie znaleziono słowa: $szuk w plik $plik"
 elif [ "$wynik" -eq 2 ]
 then
-    echo "Nie znaleziono lub brak praw do pliku: $plik"
+    echo "Nie znaleziono pliku lub brak praw do pliku: $plik"
 else
     echo "Nieznany błąd: $wynik"
 fi
