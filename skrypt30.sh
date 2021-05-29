@@ -1,6 +1,10 @@
 #!/bin/bash
 
-source "konfiguracja.sh"
+# source "konfiguracja.sh"
+
+# Pojedyncza kropka jako polecenie to synonim source
+
+. "konfiguracja.sh"
 
 powitanie
 
