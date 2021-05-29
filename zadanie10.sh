@@ -2,8 +2,9 @@
 
 read -p "Podaj nazwę pliku: " nazwa
 
-for algo in md5sum sha1sum sha256sum sha512sum
+for algo in md5 sha1 sha256 sha512
 do
-    "$algo" "$nazwa"
+   h=$("${algo}sum" "$nazwa")
+   echo "$algo: ${h:0:8}..." 
 done
 
