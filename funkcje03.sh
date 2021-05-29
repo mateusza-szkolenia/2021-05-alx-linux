@@ -4,6 +4,8 @@ function opisz_plik(){
     local rozmiar
     local suma_md5 suma_sha1
 
+    local plik="$1"
+
     echo "Plik: $plik"
     rozmiar=$(wc -c < "$plik")
     suma_md5=$(md5sum < "$plik" | grep -o '^........')
@@ -18,11 +20,9 @@ function opisz_plik(){
 
 rozmiar=10000
 
-plik="/etc/passwd"
-opisz_plik
-
-plik="/etc/motd"
-opisz_plik
+opisz_plik /etc/passwd
+opisz_plik /etc/motd
+opisz_plik /etc/hosts
 
 echo "!!!! rozmiar: $rozmiar"
-
+echo "plik: $plik (powinien być pusty)"
