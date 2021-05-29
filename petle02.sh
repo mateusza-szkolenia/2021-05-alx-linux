@@ -10,3 +10,7 @@ do
     echo "Skrypt lub zadanie: $plik"
 done
 
+for logfile in /var/log/*
+do
+    echo "Logi: $logfile"
+done
